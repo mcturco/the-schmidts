@@ -1,0 +1,208 @@
+body, section, div, ul, li, a {
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  &:visited {
+    color: inherit;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background: $cream;
+}
+
+// Flexbox ready classes
+.flex {
+  display: flex;
+}
+.flex-jc-center {
+  justify-content: center;
+}
+.flex-align-center {
+  align-items: center;
+}
+.flex-jc-between {
+  justify-content: space-between;
+}
+
+// Sizes
+.full {
+  width: 100%;
+}
+.half {
+  width: 50%;
+}
+.third {
+  width: 33.3333%;
+}
+
+// Text alignment
+.ta-center {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+// Typography
+.h1 {
+  font-family: $mainFont;
+  font-weight: $regular;
+  font-size: 47px;
+  line-height: 39px;
+  font-style: italic;
+  color: $offBlack;
+  margin-bottom: 18px;
+}
+.h2 {
+  font-family: $mainFont;
+  font-weight: $regular;
+  font-size: 36px;
+  line-height: 39px;
+  font-style: italic;
+  color: $offBlack;
+  margin-bottom: 18px;
+}
+.h3 {
+  font-family: $mainFont;
+  font-weight: $regular;
+  font-size: 24px;
+  line-height: 26px;
+  font-style: italic;
+  color: $offBlack;
+  margin-bottom: 18px;
+}
+
+.small-title {
+  font-family: $romanPetiteFont;
+  font-weight: $regular;
+  font-size: 24px;
+  line-height: 27px;
+  color: $offBlack;
+  //text-transform: uppercase;
+}
+
+p {
+  font-family: $mainFont;
+  font-weight: $regular;
+  font-size: 16px;
+  line-height: 20px;
+  color: $content;
+}
+
+.footer-link {
+  a {
+    font-family: $romanPetiteFont;
+    font-size: 16px;
+    color: $offBlack;
+  }
+}
+
+main {
+  margin: 0 0 75px;
+}
+
+section {
+  max-width: 393px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 393px;
+  margin: 0 auto;
+  padding: 48px 20px;
+  &.small {
+    padding: 26px 20px;
+  }
+}
+
+.btn-wrap {
+  display: flex;
+  margin-top: 32px;
+}
+.btn {
+  padding: 16px 20px;
+  background: $cream;
+  border: 1px solid $offBlack;
+  font-family: $mainFont;
+  font-weight: $bold;
+  font-style: italic;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: 0.3s all ease-in-out;
+  &:hover {
+    background: $offBlack;
+    color: $cream;
+  }
+}
+
+// Forms
+.form-wrap {
+  margin: 20px 0;
+  form {
+    width: 100%;
+  }
+  button {
+    -webkit-appearance: none;
+    color: $offBlack;
+    cursor: pointer;
+    &.sending {
+      opacity: 0.5;
+    }
+  }
+}
+label {
+  @extend p;
+  display: block;
+  margin-bottom: 4px;
+  color: $offBlack;
+}
+.input-wrap {
+  margin-bottom: 12px;
+
+  input[type="text"],
+  input[type="date"],
+  input[type="time"] {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border-radius: 0;
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    background: #fff;
+    padding: 16px 20px;
+    border: 1px solid $offBlack;
+    font-family: $mainFont;
+    font-weight: $regular;
+    font-size: 16px;
+    line-height: 20px;
+    color: $offBlack;
+    display: block;
+    &::placeholder {
+      color: #B7A7A4;
+    }
+  }
+}
+
+.radio-button-wrap {
+  margin-right: 16px;
+  input {
+    margin: 0;
+  }
+  label {
+    margin: 0 0 0 8px;
+  }
+}

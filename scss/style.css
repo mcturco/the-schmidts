@@ -1,0 +1,423 @@
+body, section, div, ul, li, a {
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background: #F6F0ED;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-jc-between {
+  justify-content: space-between;
+}
+
+.full {
+  width: 100%;
+}
+
+.half {
+  width: 50%;
+}
+
+.third {
+  width: 33.3333%;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p, label {
+  margin: 0;
+}
+
+.h1 {
+  font-family: mrs-eaves, serif;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 39px;
+  font-style: italic;
+  color: #3D3635;
+  margin-bottom: 18px;
+}
+
+.h2 {
+  font-family: mrs-eaves, serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 39px;
+  font-style: italic;
+  color: #3D3635;
+  margin-bottom: 18px;
+}
+
+.h3 {
+  font-family: mrs-eaves, serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  font-style: italic;
+  color: #3D3635;
+  margin-bottom: 18px;
+}
+
+.small-title {
+  font-family: mrs-eaves-roman-all-petite-c, serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  color: #3D3635;
+}
+
+p, label {
+  font-family: mrs-eaves, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6f6664;
+}
+
+.footer-link a {
+  font-family: mrs-eaves-roman-all-petite-c, serif;
+  font-size: 16px;
+  color: #3D3635;
+}
+
+main {
+  margin: 0 0 75px;
+}
+
+section {
+  max-width: 393px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 393px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+.container.small {
+  padding: 26px 20px;
+}
+
+.btn-wrap {
+  display: flex;
+  margin-top: 32px;
+}
+
+.btn {
+  padding: 16px 20px;
+  background: #F6F0ED;
+  border: 1px solid #3D3635;
+  font-family: mrs-eaves, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: 0.3s all ease-in-out;
+}
+.btn:hover {
+  background: #3D3635;
+  color: #F6F0ED;
+}
+
+.form-wrap {
+  margin: 20px 0;
+}
+.form-wrap form {
+  width: 100%;
+}
+.form-wrap button {
+  -webkit-appearance: none;
+  color: #3D3635;
+  cursor: pointer;
+}
+.form-wrap button.sending {
+  opacity: 0.5;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  color: #3D3635;
+}
+
+.input-wrap {
+  margin-bottom: 12px;
+}
+.input-wrap input[type=text],
+.input-wrap input[type=date],
+.input-wrap input[type=time] {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  border-radius: 0;
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  background: #fff;
+  padding: 16px 20px;
+  border: 1px solid #3D3635;
+  font-family: mrs-eaves, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3D3635;
+  display: block;
+}
+.input-wrap input[type=text]::placeholder,
+.input-wrap input[type=date]::placeholder,
+.input-wrap input[type=time]::placeholder {
+  color: #B7A7A4;
+}
+
+.radio-button-wrap {
+  margin-right: 16px;
+}
+.radio-button-wrap input {
+  margin: 0;
+}
+.radio-button-wrap label {
+  margin: 0 0 0 8px;
+}
+
+section.hero .image-wrap {
+  margin: -26px 0 14px;
+  border-radius: 200px 200px 0 0;
+  border: 1px solid #3D3635;
+  overflow: hidden;
+}
+section.hero span {
+  display: block;
+}
+section.hero .cliffs {
+  width: 114px;
+  margin-left: auto;
+  position: relative;
+  right: 41px;
+  bottom: 14px;
+}
+section.hero .schmidts {
+  font-size: 68px;
+  line-height: 39px;
+}
+section.hero.our-story .container {
+  padding-bottom: 0;
+}
+
+section.image-collage-cta .h1 {
+  margin-bottom: 32px;
+}
+section.image-collage-cta .image-wrap {
+  position: relative;
+}
+section.image-collage-cta img {
+  position: relative;
+  z-index: 3;
+}
+section.image-collage-cta.itinerary {
+  margin: 40px auto;
+}
+section.image-collage-cta.itinerary .image-wrap {
+  height: 393px;
+}
+section.image-collage-cta.itinerary .image-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 267px;
+}
+section.image-collage-cta.itinerary .image-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 198px;
+}
+section.image-collage-cta.itinerary .image-2::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: -8px;
+  width: calc(100% - 8px);
+  height: calc(100% - 7px);
+  border: 1px solid #3D3635;
+  z-index: 2;
+}
+section.image-collage-cta.our-story {
+  margin: 0 auto 40px;
+}
+section.image-collage-cta.our-story .image-wrap {
+  height: 480px;
+}
+section.image-collage-cta.our-story .image-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+section.image-collage-cta.our-story .image-2 {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  max-width: 187px;
+}
+section.image-collage-cta.our-story .image-2::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -8px;
+  width: calc(100% - 8px);
+  height: calc(100% - 7px);
+  border: 1px solid #3D3635;
+  z-index: 2;
+}
+section.image-collage-cta.our-story-page {
+  margin: 40px auto;
+}
+section.image-collage-cta.our-story-page .image-wrap {
+  height: 370px;
+}
+section.image-collage-cta.our-story-page .image-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 267px;
+}
+section.image-collage-cta.our-story-page .image-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 242px;
+}
+section.image-collage-cta.our-story-page .image-2::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: -8px;
+  width: calc(100% - 8px);
+  height: calc(100% - 7px);
+  border: 1px solid #3D3635;
+  z-index: 2;
+}
+
+section.single-image-cta {
+  position: relative;
+}
+section.single-image-cta .image-wrap {
+  position: relative;
+  z-index: 2;
+}
+section.single-image-cta .text-wrap {
+  position: relative;
+  top: -100px;
+  background: #F6F0ED;
+  margin: 0 20px;
+  z-index: 3;
+}
+
+section.blog-content p, section.blog-content label {
+  margin-bottom: 20px;
+}
+section.blog-content .blog-block {
+  margin-bottom: 22px;
+}
+
+section.itinerary-schedule {
+  margin-top: 20px;
+}
+section.itinerary-schedule .schedule-day p, section.itinerary-schedule .schedule-day label {
+  margin-bottom: 20px;
+}
+section.itinerary-schedule .schedule-day p span, section.itinerary-schedule .schedule-day label span {
+  color: #3D3635;
+  font-weight: 700;
+}
+section.itinerary-schedule .schedule-title {
+  font-family: "mrs-eaves-roman-all-small-ca", serif;
+  font-size: 16px;
+  color: #3D3635;
+  padding: 14px 20px;
+  border-bottom: 1px solid #3D3635;
+  background: #F6F0ED;
+  position: sticky;
+  top: 0;
+}
+
+section.invite-hero .divider {
+  width: 46px;
+  height: 1px;
+  background: #3D3635;
+  margin: 32px auto;
+}
+section.invite-hero .invitee {
+  margin-bottom: 0;
+}
+section.invite-hero .small-title {
+  margin-bottom: 20px;
+}
+
+section.wedding-details .container {
+  padding-top: 0;
+}
+section.wedding-details .block {
+  margin-bottom: 30px;
+}
+
+.invitations .btn {
+  display: block;
+}
+
+footer {
+  background: #F6F0ED;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  width: 100%;
+  border-top: 1px solid #3D3635;
+}
+footer .footer-container {
+  padding: 0 20px;
+}
+footer .footer-link {
+  padding: 20px 0;
+}
+footer .footer-link a {
+  font-family: mrs-eaves, serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #3D3635;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */

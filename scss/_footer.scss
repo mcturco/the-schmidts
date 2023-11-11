@@ -1,0 +1,30 @@
+// Footer styles
+
+footer {
+  background: $cream;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  width: 100%;
+  border-top: 1px solid $offBlack;
+
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .footer-link {
+    padding: 20px 0;
+    a {
+      font-family: $mainFont;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: $offBlack;
+      font-weight: $bold;
+      font-style: italic;
+    }
+  }
+
+}

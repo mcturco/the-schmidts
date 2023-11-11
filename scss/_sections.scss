@@ -1,0 +1,215 @@
+// Hero Section
+section.hero {
+  .image-wrap {
+    margin: -26px 0 14px;
+    border-radius: 200px 200px 0 0;
+    border: 1px solid $offBlack;
+    overflow: hidden;
+  }
+
+  span {
+    display: block;
+  }
+  .cliffs {
+    width: 114px;
+    margin-left: auto;
+    position: relative;
+    right: 41px;
+    bottom: 14px;
+  }
+  .schmidts {
+    font-size: 68px;
+    line-height: 39px;
+  }
+
+  // Our Story Page
+  &.our-story {
+    .container {
+      padding-bottom: 0;
+    }
+  }
+
+}
+
+// Collage CTA Section
+section.image-collage-cta {
+  .h1 {
+    margin-bottom: 32px;
+  }
+  .image-wrap {
+    position: relative;
+  }
+  img {
+    position: relative;
+    z-index: 3;
+  }
+
+  &.itinerary {
+    margin: 40px auto;
+    .image-wrap {
+      height: 393px;
+    }
+    .image-1 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 267px;
+    }
+    .image-2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 198px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -7px;
+        right: -8px;
+        width: calc(100% - 8px);
+        height: calc(100% - 7px);
+        border: 1px solid $offBlack;
+        z-index: 2;
+      }
+    }
+  }
+
+  &.our-story {
+    margin: 0 auto 40px;
+    .image-wrap {
+      height: 480px;
+    }
+    .image-1 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .image-2 {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      max-width: 187px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: -8px;
+        width: calc(100% - 8px);
+        height: calc(100% - 7px);
+        border: 1px solid $offBlack;
+        z-index: 2;
+      }
+    }
+  }
+
+  &.our-story-page {
+    margin: 40px auto;
+    .image-wrap {
+      height: 370px;
+    }
+    .image-1 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 267px;
+    }
+    .image-2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 242px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -7px;
+        right: -8px;
+        width: calc(100% - 8px);
+        height: calc(100% - 7px);
+        border: 1px solid $offBlack;
+        z-index: 2;
+      }
+    }
+  }
+
+}
+
+// Single Image CTA Section
+section.single-image-cta {
+  position: relative;
+  .image-wrap {
+    position: relative;
+    z-index: 2;
+  }
+  .text-wrap {
+    position: relative;
+    top: -100px;
+    background: $cream;
+    margin: 0 20px;
+    z-index: 3;
+  }
+}
+
+// Blog Section
+section.blog-content {
+  p {
+    margin-bottom: 20px;
+  }
+  .blog-block {
+    margin-bottom: 22px;
+  }
+}
+
+// Itinerary Schedule Section
+section.itinerary-schedule {
+  margin-top: 20px;
+  .schedule-day {
+    p {
+      margin-bottom: 20px;
+      span {
+        color: $offBlack;
+        font-weight: $bold;
+      }
+    }
+  }
+  .schedule-title {
+    font-family: $fontAllSmallCaps;
+    font-size: 16px;
+    color: $offBlack;
+    padding: 14px 20px;
+    border-bottom: 1px solid $offBlack;
+    background: $cream;
+    position: sticky;
+    top: 0;
+  }
+}
+
+// Invite Hero Section
+section.invite-hero {
+  .divider {
+    width: 46px;
+    height: 1px;
+    background: $offBlack;
+    margin: 32px auto;
+  }
+  .invitee {
+    margin-bottom: 0;
+  }
+  .small-title {
+    margin-bottom: 20px;
+  }
+}
+
+// Wedding Details Section
+section.wedding-details {
+  .container {
+    padding-top: 0;
+  }
+  .block {
+    margin-bottom: 30px;
+  }
+}
+
+.invitations {
+  .btn {
+    display: block;
+  }
+}
