@@ -16,6 +16,9 @@ img {
 body {
   background: #F6F0ED; }
 
+.video-wrap video {
+  width: 100%; }
+
 .flex {
   display: flex; }
 
@@ -102,6 +105,8 @@ section {
   padding: 48px 20px; }
   .container.small {
     padding: 26px 20px; }
+  .container.large {
+    max-width: 1300px; }
 
 .btn-wrap {
   display: flex;
@@ -176,6 +181,18 @@ section.hero .image-wrap {
   border: 1px solid #3D3635;
   overflow: hidden; }
 
+section.hero .video-wrap {
+  border-radius: 200px 200px 0 0;
+  border: 1px solid #3D3635;
+  overflow: hidden;
+  height: 416px; }
+  section.hero .video-wrap video {
+    width: 116%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    overflow: visible; }
+
 section.hero span {
   display: block; }
 
@@ -190,8 +207,27 @@ section.hero .schmidts {
   font-size: 68px;
   line-height: 39px; }
 
+section.hero .bottom {
+  margin-top: 32px; }
+
 section.hero.our-story .container {
   padding-bottom: 0; }
+
+section.cards-section .card {
+  border: 1px solid #3D3635;
+  display: block; }
+  section.cards-section .card:first-of-type {
+    margin-bottom: 20px; }
+  section.cards-section .card .photo {
+    display: flex; }
+    section.cards-section .card .photo img {
+      object-fit: cover; }
+  section.cards-section .card .text {
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #3D3635; }
 
 section.image-collage-cta .h1 {
   margin-bottom: 32px; }
@@ -329,6 +365,9 @@ section.wedding-details .block {
 
 .invitations .btn {
   display: block; }
+
+section.video-section video {
+  width: 100%; }
 
 footer {
   background: #F6F0ED;

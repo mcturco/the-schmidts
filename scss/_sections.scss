@@ -7,6 +7,20 @@ section.hero {
     overflow: hidden;
   }
 
+  .video-wrap {
+    border-radius: 200px 200px 0 0;
+    border: 1px solid $offBlack;
+    overflow: hidden;
+    height: 416px;
+    video {
+      width: 116%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      overflow: visible;
+    }
+  }
+
   span {
     display: block;
   }
@@ -22,6 +36,10 @@ section.hero {
     line-height: 39px;
   }
 
+  .bottom {
+    margin-top: 32px;
+  }
+
   // Our Story Page
   &.our-story {
     .container {
@@ -29,6 +47,30 @@ section.hero {
     }
   }
 
+}
+
+// Cards Section
+section.cards-section {
+  .card {
+    border: 1px solid $offBlack;
+    display: block;
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+    .photo {
+      display: flex;
+      img {
+        object-fit: cover;
+      }
+    }
+    .text {
+      padding: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid $offBlack;
+    }
+  }
 }
 
 // Collage CTA Section
@@ -211,5 +253,12 @@ section.wedding-details {
 .invitations {
   .btn {
     display: block;
+  }
+}
+
+// Video Section
+section.video-section {
+  video {
+    width: 100%;
   }
 }

@@ -22,6 +22,12 @@ body {
   background: $cream;
 }
 
+.video-wrap {
+  video {
+    width: 100%;
+  }
+}
+
 // Flexbox ready classes
 .flex {
   display: flex;
@@ -125,6 +131,9 @@ section {
   padding: 48px 20px;
   &.small {
     padding: 26px 20px;
+  }
+  &.large {
+    max-width: 1300px;
   }
 }
 
